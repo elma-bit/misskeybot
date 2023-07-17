@@ -1,4 +1,4 @@
-#python
+#python3exi
 
 # 自分のアカウントでBotに呟かせてみよう
 # 
@@ -38,7 +38,7 @@ import json
 URL = "https://misskey.io/api/notes/create"
 #tokenはGithub上には置けないのて実行時にカレントディレクトリに配置しておく
 file_data = open("token.txt", "r")
-TOKEN = file_data
+TOKEN = file_data.readline()
 
 #テスト実行なので他の人に見せないようvisibilityを設定する
 jsonNote = {
